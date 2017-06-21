@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 		moja1();
-		   navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		 
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -73,3 +73,4 @@ var app = {
     }
 
  
+  navigator.geolocation.getCurrentPosition(onSuccess, onError);
